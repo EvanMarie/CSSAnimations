@@ -198,7 +198,7 @@
     background: var(--darkestBlue);
     box-shadow: var(--mainShadow);
     position: fixed;
-    font-size: var(--xxl);
+    font-size: var(--xl);
     top: 0;
     left: 0;
     z-index: 100;
@@ -256,7 +256,7 @@ button {
   padding: 5px 10px;
   background: var(--pinkOrangeGrad75);
   color: var(--lightest);
-  font-size: var(--md);
+  font-size: var(--sm);
   font-weight: bold;
   border-radius: var(--xs);
   box-shadow: var(--largeShadow);
@@ -325,6 +325,9 @@ button:hover {
 }
 
 @media (min-width: 800px) {
+  header {
+    font-size: var(--xxl);
+  }
   .animation-selector {
     width: 250px;
     height: 50px;
