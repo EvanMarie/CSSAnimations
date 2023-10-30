@@ -1,6 +1,6 @@
 This is dedicated to my kiddos who do AWESOME web/app design in homeschool computer science!
 
-[GitHub](https://github.com/EvanMarie/CSSAnimations) | [CSS](https://gist.github.com/EvanMarie/82d11cba2efc2b446d0126538a6c8573) | [Try it!](http://www.iheartcomponents/cssanimations)
+[GitHub](https://github.com/EvanMarie/CSSAnimations) | [CSS](https://gist.github.com/EvanMarie/82d11cba2efc2b446d0126538a6c8573) | [Try it!](http://www.evanmarie.com/content/files/cssanimations/index.html)
 
 This mini-app provides an interactive way to preview various CSS animations. Simply select the desired animation and its duration, and witness it in action on an example image. If you want to try any of the animations out in your own project, just click on the CSS icon to go to the GitHub gist with all the animations. Or click the code icon to see the entire project on the GitHub repository.
 
