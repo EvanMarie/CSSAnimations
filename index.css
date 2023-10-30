@@ -174,7 +174,7 @@
 
   .entire-page-container {
     width: 100vw;
-    height: 100vh;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -234,7 +234,8 @@
 }
 
 .animation-selector {
-  width: 250px;
+  width: 200px;
+  height: 40px;
   height: fit-content;
   display: flex;
   flex-direction: row;
@@ -255,7 +256,7 @@ button {
   padding: 5px 10px;
   background: var(--pinkOrangeGrad75);
   color: var(--lightest);
-  font-size: var(--lg);
+  font-size: var(--md);
   font-weight: bold;
   border-radius: var(--xs);
   box-shadow: var(--largeShadow);
@@ -317,7 +318,21 @@ button:hover {
 }
 /* ...............................MEDIA QUERIES............................... */
 
+@media (min-width: 600px) {
+  .entire-page-container {
+    height: 100vh;
+  }
+}
+
 @media (min-width: 800px) {
+  .animation-selector {
+    width: 250px;
+    height: 50px;
+  }
+
+  button {
+    font-size: var(--lg);
+  }
   .image-card {
     width: 200px;
     height: 200px;
