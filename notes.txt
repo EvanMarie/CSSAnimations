@@ -1,0 +1,21 @@
+MEDIA QUERIES:
+
+* orientation: 
+    - @media(orientation: landscape) { ... }
+    - @media(orientation: portrait) { ... }
+
+* aspect ratio:
+    - @media(aspect-ratio: 16/9) { ... }
+    - @media(aspect-ratio: 4/3) { ... }
+
+* width:
+    - @media(min-width: 800px) { ... }
+    - @media(max-width: 800px) { ... }
+    - @media(width >= 800px) { ... }
+    - @media(100px <= width <= 800px) { ... } // not supported by Safari
+
+
+CONTAINER QUERIES: (like media queries for containers)
+
+* @container (min-width: 800px) { ... }
+* @container (max-width: 800px) { ... }

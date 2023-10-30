@@ -1,0 +1,334 @@
+:root {
+  --lightest: rgb(188, 245, 255);
+  --deepPink: #f2059f;
+  --deepPink25: rgba(242, 4, 159, 0.25);
+  --deepPink50: rgba(242, 4, 159, 0.5);
+  --deepPink75: rgba(242, 4, 159, 0.75);
+  --deepPink90: rgba(242, 4, 159, 0.9);
+
+  --mediumPink: #f205cb;
+  --mediumPink25: rgba(242, 4, 203, 0.25);
+  --mediumPink50: rgba(242, 4, 203, 0.5);
+  --mediumPink75: rgba(242, 4, 203, 0.75);
+  --mediumPink90: rgba(242, 4, 203, 0.9);
+
+  --darkestBlue: #012340;
+  --darkestBlue25: rgba(1, 35, 64, 0.25);
+  --darkestBlue50: rgba(1, 35, 64, 0.5);
+  --darkestBlue75: rgba(1, 35, 64, 0.75);
+  --darkestBlue90: rgba(1, 35, 64, 0.9);
+
+  --yellow: #fef89e;
+  --yellow25: rgba(242, 228, 29, 0.25);
+  --yellow50: rgba(242, 228, 29, 0.5);
+  --yellow75: rgba(242, 228, 29, 0.75);
+  --yellow90: rgba(242, 228, 29, 0.9);
+
+  --lightOrange: #f2b263;
+  --lightOrange25: rgba(242, 178, 99, 0.25);
+  --lightOrange50: rgba(242, 178, 99, 0.5);
+  --lightOrange75: rgba(242, 178, 99, 0.75);
+  --lightOrange90: rgba(242, 178, 99, 0.9);
+
+  --pinkOrangeGrad: linear-gradient(
+    90deg,
+    var(--mediumPink) 0%,
+    var(--lightOrange) 100%
+  );
+
+  --pinkOrangeGrad75: linear-gradient(
+    90deg,
+    var(--mediumPink75) 0%,
+    var(--lightOrange75) 100%
+  );
+
+  --pinkBlueGrad: linear-gradient(
+    90deg,
+    var(--mediumPink) 0%,
+    var(--darkestBlue) 100%
+  );
+
+  --yellowOrangeGrad: linear-gradient(
+    90deg,
+    var(--yellow) 0%,
+    var(--lightOrange) 100%
+  );
+
+  --blueYellowGrad: linear-gradient(
+    90deg,
+    var(--darkestBlue) 0%,
+    var(--yellow) 100%
+  );
+
+  --pinkYellowGrad: linear-gradient(
+    90deg,
+    var(--deepPink) 0%,
+    var(--yellow) 100%
+  );
+
+  /* Sizes */
+  --xxs: 0.5vh;
+  --xs: 1vh;
+  --sm: 1.75vh;
+  --md: 2vh;
+  --lg: 2.3vh;
+  --xl: 3vh;
+  --xxl: 3.5vh;
+  --xxxl: 4vh;
+
+  /* Shadows */
+  --mainShadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+  --subtleShadow: rgba(0, 0, 0, 0.07) 0px 1px 2px,
+    rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px,
+    rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px,
+    rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  --largeShadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  --subtleTextShadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
+  --largeTextShadow: 2px 3px 5px rgba(0, 0, 0, 0.9);
+  --shadow3D: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.pinkOrangeGrad {
+  background: var(--pinkOrangeGrad);
+}
+.pinkOrangeGrad75 {
+  background: var(--pinkOrangeGrad75);
+}
+.pinkBlueGrad {
+  background: var(--pinkBlueGrad);
+}
+.yellowOrangeGrad {
+  background: var(--yellowOrangeGrad);
+}
+.blueYellowGrad {
+  background: var(--blueYellowGrad);
+}
+.pinkYellowGrad {
+  background: var(--pinkYellowGrad);
+}
+
+/* icons */
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  background: cyan;
+  padding: var(--xxs);
+  border-radius: 50%;
+  color: var(--darkestBlue);
+}
+
+.material-symbols-outlined:hover {
+  background: var(--yellow);
+  transition: all 0.3s ease-in-out;
+}
+
+@media (min-width: 0px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    font-size: var(--md);
+    color: var(--lightest);
+    overflow: hidden;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    background: var(--pinkOrangeGrad75);
+    color: var(--light-blue);
+    position: relative;
+  }
+  a {
+    text-decoration: none;
+    color: var(--deepPink);
+  }
+
+  a:hover {
+    color: var(--yellow);
+    text-shadow: 0px 0px 3px black;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .snapScroll {
+    height: 100vh;
+    scroll-snap-type: y var(--tw-scroll-snap-strictness);
+    --tw-scroll-snap-strictness: mandatory;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 0ms;
+  }
+
+  /* ...............................CONTAINERS............................... */
+
+  .entire-page-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--sm);
+    padding: var(--xs);
+    position: relative;
+    padding-top: 10vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    overflow: hidden;
+  }
+
+  header {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--sm);
+    background: var(--darkestBlue);
+    box-shadow: var(--mainShadow);
+    position: fixed;
+    font-size: var(--xxl);
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+
+  .title {
+    text-shadow: var(--largeTextShadow);
+  }
+
+  .HStack {
+    display: flex;
+    flex-direction: row;
+    gap: var(--sm);
+    width: 100%;
+  }
+
+  .VStack {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sm);
+    width: 100%;
+  }
+
+  .image-card {
+    height: 150px;
+    width: 150px;
+    box-shadow: var(--largeShadow);
+    border-radius: var(--xs);
+    position: relative;
+  }
+}
+
+.animation-selector {
+  width: 250px;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4vw;
+  padding: var(--xs);
+  color: var(--darkestBlue);
+  border-radius: var(--xs);
+  background: var(--lightOrange90);
+  font-size: var(--md);
+}
+
+button {
+  width: fit-content;
+  white-space: nowrap;
+  height: 40px;
+  padding: 5px 10px;
+  background: var(--pinkOrangeGrad75);
+  color: var(--lightest);
+  font-size: var(--lg);
+  font-weight: bold;
+  border-radius: var(--xs);
+  box-shadow: var(--largeShadow);
+  text-shadow: var(--largeTextShadow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--mediumPink);
+  box-shadow: var(--shadow3D);
+  transform: scale(1.02);
+  transition: all 0.3s ease-in-out;
+}
+
+.animations-card-container {
+  width: 100%;
+  height: fit-content;
+  background: var(--mediumPink50);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4vw;
+  padding: var(--sm);
+  color: var(--lightest);
+}
+
+.animations-image-card {
+  height: 70vw;
+  width: 70vw;
+  max-width: 375px;
+  max-height: 375px;
+  box-shadow: var(--largeShadow);
+  border-radius: var(--xs);
+  position: relative;
+}
+
+.animations-stack {
+  width: 90vw;
+  max-width: 600px;
+  align-items: center;
+  background: var(--darkestBlue);
+  padding: var(--sm);
+  border-radius: var(--xs);
+}
+
+.select-label {
+  font-size: var(--lg);
+  font-weight: 600;
+  color: var(--lightest);
+  text-align: center;
+}
+
+.imageCard {
+  margin: 10vh 0;
+}
+/* ...............................MEDIA QUERIES............................... */
+
+@media (min-width: 800px) {
+  .image-card {
+    width: 200px;
+    height: 200px;
+  }
+
+  .animations-stack {
+  width: 60vw;
+}
+
+@media (min-width: 1300px) {
+  .image-card {
+    width: 250px;
+    height: 250px;
+  }
+}
